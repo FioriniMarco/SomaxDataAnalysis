@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 67.0, 100.0, 1627.0, 983.0 ],
+		"rect" : [ 290.0, -1353.0, 1196.0, 983.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,233 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"color" : [ 0.827450980392157, 0.152941176470588, 0.627450980392157, 1.0 ],
+					"id" : "obj-45",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 704.333333333333258, 484.00333126858709, 84.0, 22.0 ],
+					"text" : "loadmess -30."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-104",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 936.333333333333258, 709.0, 149.0, 35.0 ],
+					"text" : ";\rplayer1 outputprobability 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 1.0, 0.0, 0.0, 1.0 ],
+					"id" : "obj-122",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1130.333333333333258, 623.0, 105.0, 22.0 ],
+					"text" : "r end_state_result"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-96",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 936.333333333333258, 671.0, 213.0, 22.0 ],
+					"text" : "if ($i1 > 5000) && ($i2 == 1) then bang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-91",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1770.0, 560.000005055379233, 87.0, 22.0 ],
+					"text" : "corpuspath set"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-90",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 399.0, 881.0, 65.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-85",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1770.0, 628.0, 297.0, 22.0 ],
+					"text" : "/Users/marcofiorini/Desktop/Sept25-26_Corpus_folder"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 1.0, 0.0, 0.0, 1.0 ],
+					"id" : "obj-83",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 86.5, 68.326672862453506, 97.0, 22.0 ],
+					"text" : "r audioinfluencer"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 0.141176470588235, 0.670588235294118, 0.254901960784314, 1.0 ],
+					"id" : "obj-82",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1991.0, 377.000011205673218, 99.0, 22.0 ],
+					"text" : "s audioinfluencer"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-81",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1991.0, 347.000005602836609, 127.0, 22.0 ],
+					"text" : "audiooutput enabled 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-79",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 374.0, 631.0, 50.0, 35.0 ],
+					"text" : "onsetlimit 574"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"fontsize" : 16.0,
+					"id" : "obj-76",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1874.499972666666736, 237.000005602836609, 52.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1053.833305999999993, 31.0, 32.0, 24.0 ],
+					"text" : "Init"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"blinkcolor" : [ 0.827450980392157, 0.152941176470588, 0.627450980392157, 1.0 ],
+					"id" : "obj-77",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"outlinecolor" : [ 0.827450980392157, 0.152941176470588, 0.627450980392157, 1.0 ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1815.0, 222.000005602836609, 50.0, 50.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1003.333333333333258, 22.0, 42.753327334680534, 42.753327334680534 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 0.141176470588235, 0.670588235294118, 0.254901960784314, 1.0 ],
+					"id" : "obj-75",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1709.0, 374.000005602836609, 57.0, 22.0 ],
+					"text" : "s player1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 0.141176470588235, 0.670588235294118, 0.254901960784314, 1.0 ],
+					"id" : "obj-74",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1906.0, 377.000011205673218, 57.0, 22.0 ],
+					"text" : "s player1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-72",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "bang", "bang", "bang", "bang" ],
+					"patching_rect" : [ 1815.0, 283.000005602836609, 52.0, 22.0 ],
+					"text" : "t b b b b"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-68",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1906.0, 347.000005602836609, 35.0, 22.0 ],
+					"text" : "cut 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-66",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1709.0, 347.000005602836609, 175.0, 22.0 ],
+					"text" : "router 0 source AudioInfluencer"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bubble" : 1,
 					"fontface" : 1,
 					"fontsize" : 16.0,
@@ -50,7 +277,7 @@
 					"patching_rect" : [ 1600.0, 1032.666664481163025, 211.0, 28.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 266.0, 780.253327334680534, 209.0, 28.0 ],
-					"text" : "Write all files at the end!"
+					"text" : "Write CSV at the end!"
 				}
 
 			}
@@ -64,9 +291,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 401.0, 406.666664481163025, 149.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 94.999972666666736, 924.013309338722138, 163.0, 33.0 ],
-					"text" : "Write Somax Influencer MIDI"
+					"presentation_rect" : [ 94.999972666666736, 883.636645671381757, 163.0, 20.0 ],
+					"text" : "Write AudioInfluencer MIDI"
 				}
 
 			}
@@ -82,7 +308,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 371.0, 404.666664481163025, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 44.5, 919.259982004041603, 42.753327334680534, 42.753327334680534 ]
+					"presentation_rect" : [ 44.5, 872.259982004041603, 42.753327334680534, 42.753327334680534 ]
 				}
 
 			}
@@ -497,8 +723,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1328.666662693023682, 1036.666664481163025, 149.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 94.999972666666736, 881.883318336701223, 163.0, 20.0 ],
-					"text" : "Write Somax Player MIDI"
+					"presentation_rect" : [ 94.999972666666736, 931.883318336701223, 106.0, 20.0 ],
+					"text" : "Write Player MIDI"
 				}
 
 			}
@@ -514,7 +740,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1298.666662693023682, 1034.666664481163025, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 44.5, 870.506654669361069, 42.753327334680534, 42.753327334680534 ]
+					"presentation_rect" : [ 44.5, 920.506654669361069, 42.753327334680534, 42.753327334680534 ]
 				}
 
 			}
@@ -2885,8 +3111,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 753.333305999999993, 1116.000029683113098, 77.0, 22.0 ],
-					"text" : "loadmess 10"
+					"patching_rect" : [ 753.333305999999993, 1116.000029683113098, 70.0, 22.0 ],
+					"text" : "loadmess 0"
 				}
 
 			}
@@ -3174,7 +3400,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 516.833305999999993, 118.666663765907288, 36.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 153.5, 717.913336431226753, 36.0, 24.0 ],
+					"presentation_rect" : [ 1091.166693999999779, 31.0, 36.0, 24.0 ],
 					"text" : "1 "
 				}
 
@@ -3380,7 +3606,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 648.333305999999993, 1051.000029683113098, 77.0, 22.0 ],
-					"text" : "loadmess 20"
+					"text" : "loadmess 60"
 				}
 
 			}
@@ -5820,7 +6046,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 866.0, 609.0, 50.0, 22.0 ],
-					"text" : "3662"
+					"text" : "18933"
 				}
 
 			}
@@ -5932,7 +6158,72 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-16",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 810.0, 461.0, 76.0, 22.0 ],
+									"text" : "onsetlimit $1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-13",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 867.0, 409.0, 114.0, 22.0 ],
+									"text" : "574.12188"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-9",
+									"maxclass" : "multislider",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 1030.0, 383.0, 100.0, 216.0 ],
+									"setminmax" : [ 0.0, 1000.0 ],
+									"setstyle" : 1
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-8",
+									"maxclass" : "newobj",
+									"numinlets" : 6,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 810.0, 336.0, 147.0, 22.0 ],
+									"text" : "scale -120. 0. 1000. 0. 0.9"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-7",
+									"maxclass" : "multislider",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 595.0, 267.0, 100.0, 216.0 ],
+									"setminmax" : [ -90.0, 0.0 ],
+									"setstyle" : 1
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-2",
 									"maxclass" : "newobj",
@@ -6571,6 +6862,30 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-13", 1 ],
+									"order" : 1,
+									"source" : [ "obj-8", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-16", 0 ],
+									"order" : 2,
+									"source" : [ "obj-8", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-9", 0 ],
+									"order" : 0,
+									"source" : [ "obj-8", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-41", 0 ],
 									"source" : [ "obj-90", 0 ]
 								}
@@ -6800,6 +7115,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-96", 1 ],
+					"source" : [ "obj-122", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-136", 1 ],
 					"source" : [ "obj-126", 1 ]
 				}
@@ -6996,17 +7318,14 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-121", 0 ],
-					"midpoints" : [ 617.5, 735.249999940395355, 648.49998927116394, 735.249999940395355 ],
-					"order" : 0,
-					"source" : [ "obj-3", 0 ]
+					"destination" : [ "obj-79", 1 ],
+					"source" : [ "obj-29", 3 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 1 ],
-					"order" : 1,
 					"source" : [ "obj-3", 0 ]
 				}
 
@@ -7147,6 +7466,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"source" : [ "obj-45", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-51", 0 ],
 					"source" : [ "obj-50", 0 ]
 				}
@@ -7218,8 +7544,67 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-75", 0 ],
+					"source" : [ "obj-66", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-74", 0 ],
+					"source" : [ "obj-68", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-69", 0 ],
 					"source" : [ "obj-71", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-66", 0 ],
+					"midpoints" : [ 1824.5, 316.000005602836609, 1718.5, 316.000005602836609 ],
+					"source" : [ "obj-72", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-68", 0 ],
+					"midpoints" : [ 1835.5, 316.000005602836609, 1915.5, 316.000005602836609 ],
+					"source" : [ "obj-72", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-81", 0 ],
+					"midpoints" : [ 1846.5, 325.500005602836609, 2000.5, 325.500005602836609 ],
+					"source" : [ "obj-72", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-72", 0 ],
+					"source" : [ "obj-77", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-82", 0 ],
+					"source" : [ "obj-81", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-29", 0 ],
+					"source" : [ "obj-83", 0 ]
 				}
 
 			}
@@ -7255,6 +7640,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-109", 0 ],
 					"source" : [ "obj-95", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-104", 0 ],
+					"source" : [ "obj-96", 0 ]
 				}
 
 			}
@@ -7501,44 +7893,37 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "Fabbrizio2c.wav",
-				"bootpath" : "~/Documents/GitHub/Somax2/max/somax/media",
-				"patcherrelativepath" : "../Documents/GitHub/Somax2/max/somax/media",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "OMax.Yin+.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/OMax4.6/patchers",
-				"patcherrelativepath" : "../Documents/Max 8/Packages/OMax4.6/patchers",
+				"patcherrelativepath" : "../../../Max 8/Packages/OMax4.6/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "OMax.Yin+core.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/OMax4.6/patchers",
-				"patcherrelativepath" : "../Documents/Max 8/Packages/OMax4.6/patchers",
+				"patcherrelativepath" : "../../../Max 8/Packages/OMax4.6/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "abstraction_path.js",
 				"bootpath" : "~/Documents/GitHub/Somax2/max/somax/javascript",
-				"patcherrelativepath" : "../Documents/GitHub/Somax2/max/somax/javascript",
+				"patcherrelativepath" : "../../Somax2/max/somax/javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "audio2chroma.maxpat",
 				"bootpath" : "~/Documents/GitHub/Somax2/max/somax/patchers/resources/influencers",
-				"patcherrelativepath" : "../Documents/GitHub/Somax2/max/somax/patchers/resources/influencers",
+				"patcherrelativepath" : "../../Somax2/max/somax/patchers/resources/influencers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bc.autoname.js",
 				"bootpath" : "~/Documents/Max 8/Packages/OMax4.6/javascript",
-				"patcherrelativepath" : "../Documents/Max 8/Packages/OMax4.6/javascript",
+				"patcherrelativepath" : "../../../Max 8/Packages/OMax4.6/javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
@@ -7557,14 +7942,14 @@
 , 			{
 				"name" : "computeMemoryPitchClass.js",
 				"bootpath" : "~/Documents/GitHub/Somax2/max/somax/javascript",
-				"patcherrelativepath" : "../Documents/GitHub/Somax2/max/somax/javascript",
+				"patcherrelativepath" : "../../Somax2/max/somax/javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "heldnotes.maxpat",
 				"bootpath" : "~/Documents/GitHub/Somax2/max/somax/patchers/resources/misc",
-				"patcherrelativepath" : "../Documents/GitHub/Somax2/max/somax/patchers/resources/misc",
+				"patcherrelativepath" : "../../Somax2/max/somax/patchers/resources/misc",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -7575,357 +7960,357 @@
 , 			{
 				"name" : "kslider.compact.maxpat",
 				"bootpath" : "~/Documents/GitHub/Somax2/max/somax/patchers/resources/misc",
-				"patcherrelativepath" : "../Documents/GitHub/Somax2/max/somax/patchers/resources/misc",
+				"patcherrelativepath" : "../../Somax2/max/somax/patchers/resources/misc",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "midi2chroma.maxpat",
 				"bootpath" : "~/Documents/GitHub/Somax2/max/somax/patchers/resources/influencers",
-				"patcherrelativepath" : "../Documents/GitHub/Somax2/max/somax/patchers/resources/influencers",
+				"patcherrelativepath" : "../../Somax2/max/somax/patchers/resources/influencers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "midi2chroma_nofilter.maxpat",
 				"bootpath" : "~/Documents/GitHub/Somax2/max/somax/patchers/resources/influencers",
-				"patcherrelativepath" : "../Documents/GitHub/Somax2/max/somax/patchers/resources/influencers",
+				"patcherrelativepath" : "../../Somax2/max/somax/patchers/resources/influencers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "midichromaanalysis.maxpat",
 				"bootpath" : "~/Documents/GitHub/Somax2/max/somax/patchers/resources/influencers",
-				"patcherrelativepath" : "../Documents/GitHub/Somax2/max/somax/patchers/resources/influencers",
+				"patcherrelativepath" : "../../Somax2/max/somax/patchers/resources/influencers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "midipitchanalysis.maxpat",
 				"bootpath" : "~/Documents/GitHub/Somax2/max/somax/patchers/resources/influencers",
-				"patcherrelativepath" : "../Documents/GitHub/Somax2/max/somax/patchers/resources/influencers",
+				"patcherrelativepath" : "../../Somax2/max/somax/patchers/resources/influencers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "omnimidiflush.maxpat",
 				"bootpath" : "~/Documents/GitHub/Somax2/max/somax/patchers/resources/misc",
-				"patcherrelativepath" : "../Documents/GitHub/Somax2/max/somax/patchers/resources/misc",
+				"patcherrelativepath" : "../../Somax2/max/somax/patchers/resources/misc",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "peakmeter.maxpat",
 				"bootpath" : "~/Documents/GitHub/Somax2/max/somax/patchers/resources/player",
-				"patcherrelativepath" : "../Documents/GitHub/Somax2/max/somax/patchers/resources/player",
+				"patcherrelativepath" : "../../Somax2/max/somax/patchers/resources/player",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.atom.maxpat",
 				"bootpath" : "~/Documents/GitHub/Somax2/max/somax/patchers/resources/player",
-				"patcherrelativepath" : "../Documents/GitHub/Somax2/max/somax/patchers/resources/player",
+				"patcherrelativepath" : "../../Somax2/max/somax/patchers/resources/player",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.audiocorpusbuilder.maxpat",
 				"bootpath" : "~/Documents/GitHub/Somax2/max/somax/patchers",
-				"patcherrelativepath" : "../Documents/GitHub/Somax2/max/somax/patchers",
+				"patcherrelativepath" : "../../Somax2/max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.audioinfluencer.app.maxpat",
 				"bootpath" : "~/Documents/GitHub/Somax2/max/somax/patchers",
-				"patcherrelativepath" : "../Documents/GitHub/Somax2/max/somax/patchers",
+				"patcherrelativepath" : "../../Somax2/max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.audioinfluencer.maxpat",
 				"bootpath" : "~/Documents/GitHub/Somax2/max/somax/patchers",
-				"patcherrelativepath" : "../Documents/GitHub/Somax2/max/somax/patchers",
+				"patcherrelativepath" : "../../Somax2/max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.audioinfluencer.ui.maxpat",
 				"bootpath" : "~/Documents/GitHub/Somax2/max/somax/patchers",
-				"patcherrelativepath" : "../Documents/GitHub/Somax2/max/somax/patchers",
+				"patcherrelativepath" : "../../Somax2/max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.audioinput.maxpat",
 				"bootpath" : "~/Documents/GitHub/Somax2/max/somax/patchers",
-				"patcherrelativepath" : "../Documents/GitHub/Somax2/max/somax/patchers",
+				"patcherrelativepath" : "../../Somax2/max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.audiomixer.maxpat",
 				"bootpath" : "~/Documents/GitHub/Somax2/max/somax/patchers",
-				"patcherrelativepath" : "../Documents/GitHub/Somax2/max/somax/patchers",
+				"patcherrelativepath" : "../../Somax2/max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.audiooutput.maxpat",
 				"bootpath" : "~/Documents/GitHub/Somax2/max/somax/patchers",
-				"patcherrelativepath" : "../Documents/GitHub/Somax2/max/somax/patchers",
+				"patcherrelativepath" : "../../Somax2/max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.audiorenderer.maxpat",
 				"bootpath" : "~/Documents/GitHub/Somax2/max/somax/patchers",
-				"patcherrelativepath" : "../Documents/GitHub/Somax2/max/somax/patchers",
+				"patcherrelativepath" : "../../Somax2/max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.await_patcherargs.maxpat",
 				"bootpath" : "~/Documents/GitHub/Somax2/max/somax/patchers",
-				"patcherrelativepath" : "../Documents/GitHub/Somax2/max/somax/patchers",
+				"patcherrelativepath" : "../../Somax2/max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.beattracker.maxpat",
 				"bootpath" : "~/Documents/GitHub/Somax2/max/somax/patchers",
-				"patcherrelativepath" : "../Documents/GitHub/Somax2/max/somax/patchers",
+				"patcherrelativepath" : "../../Somax2/max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.corpusbuilder.core.maxpat",
 				"bootpath" : "~/Documents/GitHub/Somax2/max/somax/patchers",
-				"patcherrelativepath" : "../Documents/GitHub/Somax2/max/somax/patchers",
+				"patcherrelativepath" : "../../Somax2/max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.corpuspath.maxpat",
 				"bootpath" : "~/Documents/GitHub/Somax2/max/somax/patchers/resources/misc",
-				"patcherrelativepath" : "../Documents/GitHub/Somax2/max/somax/patchers/resources/misc",
+				"patcherrelativepath" : "../../Somax2/max/somax/patchers/resources/misc",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.corpusview.maxpat",
 				"bootpath" : "~/Documents/GitHub/Somax2/max/somax/patchers",
-				"patcherrelativepath" : "../Documents/GitHub/Somax2/max/somax/patchers",
+				"patcherrelativepath" : "../../Somax2/max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.filter_midichannels.maxpat",
 				"bootpath" : "~/Documents/GitHub/Somax2/max/somax/patchers",
-				"patcherrelativepath" : "../Documents/GitHub/Somax2/max/somax/patchers",
+				"patcherrelativepath" : "../../Somax2/max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.interpreter.maxpat",
 				"bootpath" : "~/Documents/GitHub/Somax2/max/somax/patchers/resources/misc",
-				"patcherrelativepath" : "../Documents/GitHub/Somax2/max/somax/patchers/resources/misc",
+				"patcherrelativepath" : "../../Somax2/max/somax/patchers/resources/misc",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.midicorpusbuilder.maxpat",
 				"bootpath" : "~/Documents/GitHub/Somax2/max/somax/patchers",
-				"patcherrelativepath" : "../Documents/GitHub/Somax2/max/somax/patchers",
+				"patcherrelativepath" : "../../Somax2/max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.midiinfluencer.maxpat",
 				"bootpath" : "~/Documents/GitHub/Somax2/max/somax/patchers",
-				"patcherrelativepath" : "../Documents/GitHub/Somax2/max/somax/patchers",
+				"patcherrelativepath" : "../../Somax2/max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.midiinfluencer.ui.maxpat",
 				"bootpath" : "~/Documents/GitHub/Somax2/max/somax/patchers",
-				"patcherrelativepath" : "../Documents/GitHub/Somax2/max/somax/patchers",
+				"patcherrelativepath" : "../../Somax2/max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.midimixer.maxpat",
 				"bootpath" : "~/Documents/GitHub/Somax2/max/somax/patchers",
-				"patcherrelativepath" : "../Documents/GitHub/Somax2/max/somax/patchers",
+				"patcherrelativepath" : "../../Somax2/max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.midioutput.maxpat",
 				"bootpath" : "~/Documents/GitHub/Somax2/max/somax/patchers",
-				"patcherrelativepath" : "../Documents/GitHub/Somax2/max/somax/patchers",
+				"patcherrelativepath" : "../../Somax2/max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.midirenderer.maxpat",
 				"bootpath" : "~/Documents/GitHub/Somax2/max/somax/patchers",
-				"patcherrelativepath" : "../Documents/GitHub/Somax2/max/somax/patchers",
+				"patcherrelativepath" : "../../Somax2/max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.multistatebutton.maxpat",
 				"bootpath" : "~/Documents/GitHub/Somax2/max/somax/patchers",
-				"patcherrelativepath" : "../Documents/GitHub/Somax2/max/somax/patchers",
+				"patcherrelativepath" : "../../Somax2/max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.pan2.maxpat",
 				"bootpath" : "~/Documents/GitHub/Somax2/max/somax/patchers/resources/misc",
-				"patcherrelativepath" : "../Documents/GitHub/Somax2/max/somax/patchers/resources/misc",
+				"patcherrelativepath" : "../../Somax2/max/somax/patchers/resources/misc",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.path.maxpat",
 				"bootpath" : "~/Documents/GitHub/Somax2/max/somax/patchers",
-				"patcherrelativepath" : "../Documents/GitHub/Somax2/max/somax/patchers",
+				"patcherrelativepath" : "../../Somax2/max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.player.app.maxpat",
 				"bootpath" : "~/Documents/GitHub/Somax2/max/somax/patchers",
-				"patcherrelativepath" : "../Documents/GitHub/Somax2/max/somax/patchers",
+				"patcherrelativepath" : "../../Somax2/max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.player.core.maxpat",
 				"bootpath" : "~/Documents/GitHub/Somax2/max/somax/patchers",
-				"patcherrelativepath" : "../Documents/GitHub/Somax2/max/somax/patchers",
+				"patcherrelativepath" : "../../Somax2/max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.player.maxpat",
 				"bootpath" : "~/Documents/GitHub/Somax2/max/somax/patchers",
-				"patcherrelativepath" : "../Documents/GitHub/Somax2/max/somax/patchers",
+				"patcherrelativepath" : "../../Somax2/max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.player.routerblock.maxpat",
 				"bootpath" : "~/Documents/GitHub/Somax2/max/somax/patchers/resources/player",
-				"patcherrelativepath" : "../Documents/GitHub/Somax2/max/somax/patchers/resources/player",
+				"patcherrelativepath" : "../../Somax2/max/somax/patchers/resources/player",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.player.routing.maxpat",
 				"bootpath" : "~/Documents/GitHub/Somax2/max/somax/patchers/resources/player",
-				"patcherrelativepath" : "../Documents/GitHub/Somax2/max/somax/patchers/resources/player",
+				"patcherrelativepath" : "../../Somax2/max/somax/patchers/resources/player",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.player.ui.maxpat",
 				"bootpath" : "~/Documents/GitHub/Somax2/max/somax/patchers",
-				"patcherrelativepath" : "../Documents/GitHub/Somax2/max/somax/patchers",
+				"patcherrelativepath" : "../../Somax2/max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.print.maxpat",
 				"bootpath" : "~/Documents/GitHub/Somax2/max/somax/patchers",
-				"patcherrelativepath" : "../Documents/GitHub/Somax2/max/somax/patchers",
+				"patcherrelativepath" : "../../Somax2/max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.receiveblock.maxpat",
 				"bootpath" : "~/Documents/GitHub/Somax2/max/somax/patchers/resources/misc",
-				"patcherrelativepath" : "../Documents/GitHub/Somax2/max/somax/patchers/resources/misc",
+				"patcherrelativepath" : "../../Somax2/max/somax/patchers/resources/misc",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.relativepath.maxpat",
 				"bootpath" : "~/Documents/GitHub/Somax2/max/somax/patchers/resources/misc",
-				"patcherrelativepath" : "../Documents/GitHub/Somax2/max/somax/patchers/resources/misc",
+				"patcherrelativepath" : "../../Somax2/max/somax/patchers/resources/misc",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.routesignal.maxpat",
 				"bootpath" : "~/Documents/GitHub/Somax2/max/somax/patchers",
-				"patcherrelativepath" : "../Documents/GitHub/Somax2/max/somax/patchers",
+				"patcherrelativepath" : "../../Somax2/max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.server.app.maxpat",
 				"bootpath" : "~/Documents/GitHub/Somax2/max/somax/patchers",
-				"patcherrelativepath" : "../Documents/GitHub/Somax2/max/somax/patchers",
+				"patcherrelativepath" : "../../Somax2/max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.server.maxpat",
 				"bootpath" : "~/Documents/GitHub/Somax2/max/somax/patchers",
-				"patcherrelativepath" : "../Documents/GitHub/Somax2/max/somax/patchers",
+				"patcherrelativepath" : "../../Somax2/max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.serverstatus.maxpat",
 				"bootpath" : "~/Documents/GitHub/Somax2/max/somax/patchers/resources/server",
-				"patcherrelativepath" : "../Documents/GitHub/Somax2/max/somax/patchers/resources/server",
+				"patcherrelativepath" : "../../Somax2/max/somax/patchers/resources/server",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.serverstatus.ui.maxpat",
 				"bootpath" : "~/Documents/GitHub/Somax2/max/somax/patchers/resources/server",
-				"patcherrelativepath" : "../Documents/GitHub/Somax2/max/somax/patchers/resources/server",
+				"patcherrelativepath" : "../../Somax2/max/somax/patchers/resources/server",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.source.maxpat",
 				"bootpath" : "~/Documents/GitHub/Somax2/max/somax/patchers",
-				"patcherrelativepath" : "../Documents/GitHub/Somax2/max/somax/patchers",
+				"patcherrelativepath" : "../../Somax2/max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.uniquename.maxpat",
 				"bootpath" : "~/Documents/GitHub/Somax2/max/somax/patchers/resources/misc",
-				"patcherrelativepath" : "../Documents/GitHub/Somax2/max/somax/patchers/resources/misc",
+				"patcherrelativepath" : "../../Somax2/max/somax/patchers/resources/misc",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.uniquenumber.maxpat",
 				"bootpath" : "~/Documents/GitHub/Somax2/max/somax/patchers/resources/misc",
-				"patcherrelativepath" : "../Documents/GitHub/Somax2/max/somax/patchers/resources/misc",
+				"patcherrelativepath" : "../../Somax2/max/somax/patchers/resources/misc",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.winresize.maxpat",
 				"bootpath" : "~/Documents/GitHub/Somax2/max/somax/patchers/resources/misc",
-				"patcherrelativepath" : "../Documents/GitHub/Somax2/max/somax/patchers/resources/misc",
+				"patcherrelativepath" : "../../Somax2/max/somax/patchers/resources/misc",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sr.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/OMax4.6/patchers",
-				"patcherrelativepath" : "../Documents/Max 8/Packages/OMax4.6/patchers",
+				"patcherrelativepath" : "../../../Max 8/Packages/OMax4.6/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
