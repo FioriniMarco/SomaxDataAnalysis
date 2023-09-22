@@ -9,8 +9,8 @@ def midi_to_note(midi_value):
     return f'{note}{octave}'
 
 # Load the CSV files
-df1 = pd.read_csv('data/pierre_infl.csv')
-df2 = pd.read_csv('data/pierre_player.csv')
+df1 = pd.read_csv('data/csv/pierre_infl.csv')
+df2 = pd.read_csv('data/csv/pierre_player.csv')
 
 # Convert 'time' column to datetime
 df1['time'] = pd.to_datetime(df1['time'], unit='s')
