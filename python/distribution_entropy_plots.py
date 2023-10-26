@@ -170,7 +170,7 @@ def save_duration_distribution_to_csv(csv_file_path, duration_distribution):
             writer.writerow([duration, frequency])
 
 # Loop through all folders from impro01 to impro10
-for folder_num in range(2, 11):
+for folder_num in range(6, 11):
     data_folder = f'impro{folder_num:02d}'  # Generate folder name (e.g., impro01, impro02, ..., impro10)
     midi_folder = f'data/{data_folder}'  # Define the path to the folder containing MIDI files
 
